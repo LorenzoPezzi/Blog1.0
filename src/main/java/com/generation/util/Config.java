@@ -24,7 +24,7 @@ public class Config {
 	
 	private void _init() throws ClassNotFoundException, SQLException {
 		Class.forName("org.sqlite.JDBC");
-		String filePath = "C:\\Users\\scart\\eclipse-workspace\\Blog\\blog.db";
+		String filePath = "C:\\filePath\\blog.db";
 		conn = DriverManager.getConnection("jdbc:sqlite:"+ filePath);
 		
 		bl = new FirstBlogBL(new PostDAO("POST"), new BloggerDAO("BLOGGER"), new CommentDAO("COMMENTS"));
