@@ -19,7 +19,7 @@ Per quanto riguarda l'invio di mail automatiche e il caricamento di file mi è b
 
 Nascondere i dati sensibili dell'utente mi è servito solamente in mancanza di una connessione sicura, per farlo ho criptato le password (in questo caso SHA256) con JS e le ho inviate al server già criptate. Il server ovviamente le salva già criptate ed il processo di confronto avviene con password già criptate.
 
-Per la gestione di tutti i comandi ho utilizzato il COMMAND PATTERN, che ho trovato molto comodo e pulito per questa situazione, scaricando la Servlet da eventuali gestioni impossibili. Una SuperClasse astratta implementerà le proprietà più usate per tutti i comandi (User in sessione, connessione DB e BusinessLogic). Ogni sottoclasse avrà il compito di gestire le request/response con l'uso della business logic che si occupa di dialogare con il DB.
+Per la gestione di tutti i comandi ho utilizzato il COMMAND PATTERN, che ho trovato molto comodo e pulito per questa situazione, scaricando la Servlet da eventuali gestioni impossibili. Una SuperClasse astratta implementerà le proprietà più usate per tutti i comandi (User in sessione e BusinessLogic). Ogni sottoclasse avrà il compito di gestire le request/response con l'uso della business logic che si occupa di dialogare con il DB.
 
 La classe di Configurazione è una SINGLETON, avendo necessità di avere uno e un solo collegamento al DB e una sola BL.
 
