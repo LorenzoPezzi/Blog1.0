@@ -11,8 +11,8 @@ import java.util.Properties;
 public class SendMail {
     public static boolean send(Blogger b) {
 
-        final String username = "stepsabelli@gmail.com";
-        final String password = "Zeus1993!";
+        final String username = "mail@gmail.com";
+        final String password = "password";
 
         Properties prop = new Properties();
 		prop.put("mail.smtp.host", "smtp.gmail.com");
@@ -30,7 +30,7 @@ public class SendMail {
         try {
 
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("stepsabelli@gmail.com"));
+            message.setFrom(new InternetAddress("mail@gmail.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(b.getEmail())
