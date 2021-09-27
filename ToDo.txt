@@ -1,0 +1,4 @@
+- Inserimento super user
+- Miglioramento Update
+- Implementazione File img
+- Fix searchbar, like, signup
