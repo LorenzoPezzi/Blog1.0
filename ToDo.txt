@@ -1,4 +1,3 @@
-- Inserimento super user
+- Rendere effettivi lato server i comandi super user
 - Miglioramento Update
-- Implementazione File img
-- Fix searchbar, like, signup
+- Rendere effettivi in tutto il progetto il file upload
